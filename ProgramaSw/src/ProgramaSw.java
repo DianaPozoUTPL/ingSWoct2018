@@ -32,6 +32,7 @@ public class ProgramaSw {
         objeto.guardarArchivo("1.- Calcular la edad de una persona", band);
         objeto.guardarArchivo("2.- Generar los términos de una serie de números", band);
         objeto.guardarArchivo("3.- Suma de dos numeros enteros", band);
+        objeto.guardarArchivo("4.- Resta de dos numeros enteros", band); // Metodo incorporado en la nueva rama
 
         objeto.guardarArchivo("Seleccione una opción: ", band);
         opcion = lee.nextInt();
@@ -63,6 +64,16 @@ public class ProgramaSw {
                 num2 = lee.nextInt();
                 objeto.guardarArchivo(String.valueOf(num2), band2);
                 objeto.guardarArchivo(" *La suma es: " + sumaNum(num1, num2), band);
+
+                break;
+            case 4:
+                objeto.guardarArchivo("Ingrese el primer número", band);
+                num1 = lee.nextInt();
+                objeto.guardarArchivo(String.valueOf(num1), band2);
+                objeto.guardarArchivo("Ingrese el segundo número", band);
+                num2 = lee.nextInt();
+                objeto.guardarArchivo(String.valueOf(num2), band2);
+                objeto.guardarArchivo(" *La resta es: " + restaNum(num1, num2), band);
 
                 break;
             default:
@@ -106,6 +117,12 @@ public class ProgramaSw {
         int suma = 0;
         suma = num1 + num2;
         return suma;
+    }
+    
+     public static int restaNum(int num1, int num2) {
+        int res = 0;
+        res = num1 - num2;
+        return res;
     }
 
     public void guardarArchivo(String mensaje, int band) {

@@ -3,10 +3,11 @@ A continuación se muestra los ejemplos simples
 1.- Calcular la edad de una persona
 2.- Generar los términos de una serie de números
 3.- Suma de dos numeros enteros
+4.- Resta de dos numeros enteros
 Seleccione una opción: 
-3
+4
 Ingrese el primer número
-7
+10
 Ingrese el segundo número
-9
- *La suma es: 16
+5
+ *La resta es: 5
