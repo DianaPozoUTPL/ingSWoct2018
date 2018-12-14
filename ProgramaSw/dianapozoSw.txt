@@ -2,12 +2,11 @@
 A continuación se muestra los ejemplos simples
 1.- Calcular la edad de una persona
 2.- Generar los términos de una serie de números
+3.- Suma de dos numeros enteros
 Seleccione una opción: 
-1
-Ingrese el año de nacimiento:
-1967
-Ingrese el mes de nacimiento:
-11
-Ingrese el dia de nacimiento:
-20
- *La edad que tiene es: 50 años
+3
+Ingrese el primer número
+7
+Ingrese el segundo número
+9
+ *La suma es: 16

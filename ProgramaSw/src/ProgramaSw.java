@@ -4,14 +4,12 @@
  * and open the template in the editor.
  */
 
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Scanner;
-
 
 /**
  *
@@ -23,7 +21,7 @@ public class ProgramaSw {
     static PrintStream o;
 
     public static void main(String[] args) throws FileNotFoundException {
-        int a, m, d, opcion, nT, band, band2;
+        int a, m, d, opcion, nT, band, band2, num1, num2;
         band = 0;
         band2 = 1;
         Scanner lee = new Scanner(System.in);
@@ -33,6 +31,7 @@ public class ProgramaSw {
         objeto.guardarArchivo("A continuación se muestra los ejemplos simples", band);
         objeto.guardarArchivo("1.- Calcular la edad de una persona", band);
         objeto.guardarArchivo("2.- Generar los términos de una serie de números", band);
+        objeto.guardarArchivo("3.- Suma de dos numeros enteros", band);
 
         objeto.guardarArchivo("Seleccione una opción: ", band);
         opcion = lee.nextInt();
@@ -55,6 +54,16 @@ public class ProgramaSw {
                 nT = lee.nextInt();
                 serieFibonaci(nT);
                 objeto.guardarArchivo(String.valueOf(nT), band2);
+                break;
+            case 3:
+                objeto.guardarArchivo("Ingrese el primer número", band);
+                num1 = lee.nextInt();
+                objeto.guardarArchivo(String.valueOf(num1), band2);
+                objeto.guardarArchivo("Ingrese el segundo número", band);
+                num2 = lee.nextInt();
+                objeto.guardarArchivo(String.valueOf(num2), band2);
+                objeto.guardarArchivo(" *La suma es: " + sumaNum(num1, num2), band);
+
                 break;
             default:
                 objeto.guardarArchivo("Opción inválida\n", band);
@@ -91,6 +100,12 @@ public class ProgramaSw {
             n1 = n2;
             n2 = termino;
         }
+    }
+
+    public static int sumaNum(int num1, int num2) {
+        int suma = 0;
+        suma = num1 + num2;
+        return suma;
     }
 
     public void guardarArchivo(String mensaje, int band) {
