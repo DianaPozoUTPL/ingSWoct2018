@@ -67,6 +67,8 @@ public class ProgramaSw {
 
                 break;
             case 4:
+                objeto.guardarArchivo("Estoy en la rama nueva", band);
+
                 objeto.guardarArchivo("Ingrese el primer número", band);
                 num1 = lee.nextInt();
                 objeto.guardarArchivo(String.valueOf(num1), band2);
@@ -118,8 +120,8 @@ public class ProgramaSw {
         suma = num1 + num2;
         return suma;
     }
-    
-     public static int restaNum(int num1, int num2) {
+
+    public static int restaNum(int num1, int num2) {
         int res = 0;
         res = num1 - num2;
         return res;
