@@ -1,0 +1,13 @@
+******************** BIENVENIDOS *******************
+A continuación se muestra los ejemplos simples
+1.- Calcular la edad de una persona
+2.- Generar los términos de una serie de números
+Seleccione una opción: 
+1
+Ingrese el año de nacimiento:
+1991
+Ingrese el mes de nacimiento:
+8
+Ingrese el dia de nacimiento:
+15
+ *La edad que tiene es: 27años
