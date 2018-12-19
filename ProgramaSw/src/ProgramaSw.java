@@ -34,7 +34,7 @@ public class ProgramaSw {
         objeto.guardarArchivo("3.- Suma de dos numeros enteros", band);
         objeto.guardarArchivo("4.- Resta de dos numeros enteros", band); // Metodo incorporado en la nueva rama
 
-        objeto.guardarArchivo("Seleccione una opción: ", band);
+        objeto.guardarArchivo("Seleccione una opcion: ", band);
         opcion = lee.nextInt();
         objeto.guardarArchivo(String.valueOf(opcion), band2);
         switch (opcion) {
